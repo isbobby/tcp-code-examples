@@ -4,8 +4,7 @@ const server = net.createServer(
     socket => {
         socket.write("Hello, welcome to my TCP server\n"),
             socket.on("data", data => {
-                console.log("Received byte buffer data: " + data.toString())
-                socket.write("I can repeat that:" + data.toString())
+                socket.write("200")
             })
     }
 )
